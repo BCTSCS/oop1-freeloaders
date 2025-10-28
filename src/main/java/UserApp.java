@@ -11,8 +11,20 @@ public class UserApp extends JFrame{
     }
     public UserApp(){
         panel = new JPanel();
-        painting = new Painting();
-        vlogger = new Vlogger();
+
         user = new Player();
+        vlogger = new Vlogger();
+        painting = new Painting();
+
+        panel.add(new JLabel("Player Name:" + user.getName()));
+        panel.add(new JLabel("Level:" + user.getLevel()));
+        
+        panel.add(new JLabel("Vlogger Name:" + vlogger.getName()));
+        panel.add(new JLabel("Year Joined:" + vlogger.getYearJoined()));
+        
+        panel.add(new JLabel("Painting Title:" + painting.getTitle()));
+        panel.add(new JLabel("Year Created:" + painting.getYear()));
+
+        add(panel());
     }
 }
