@@ -1,20 +1,21 @@
 
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
 
 public class UserApp extends JFrame{
     private JPanel panel;
     private Painting painting;
     private Vlogger vlogger;
     private Player user;
-    public static void main(String[] args){
-        new UserApp()
-    }
     public UserApp(){
         panel = new JPanel();
 
         user = new Player();
         vlogger = new Vlogger();
         painting = new Painting();
+
+        setTitle("Use info");
+        setSize(400,400);
 
         panel.add(new JLabel("Player Name:" + user.getName()));
         panel.add(new JLabel("Level:" + user.getLevel()));
@@ -26,5 +27,9 @@ public class UserApp extends JFrame{
         panel.add(new JLabel("Year Created:" + painting.getYear()));
 
         add(panel());
+        setVisible(true);
+    }
+    public static void main(String[] args){
+        new UserApp();
     }
 }
