@@ -2,13 +2,13 @@ public class Painting{
     private int year;
     private String title;
     public String getTitle(){
-        return Title
+        return Title;
     }
     public Painting(){
-        title = "Polina"
-        year = 2008
+        title = "Polina";
+        year = 2008;
     }
     public int getYear(){
-        return Year
+        return Year;
     }
 }
