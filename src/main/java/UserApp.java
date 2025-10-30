@@ -26,7 +26,7 @@ public class UserApp extends JFrame{
         panel.add(new JLabel("Painting Title:" + painting.getTitle()));
         panel.add(new JLabel("Year Created:" + painting.getYear()));
 
-        add(panel());
+        add(panel);
         setVisible(true);
     }
     public static void main(String[] args){
