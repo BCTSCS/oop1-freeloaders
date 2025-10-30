@@ -1,6 +1,7 @@
 public class Painting{
     private int year;
     private String title;
+    
     public String getTitle(){
         return Title;
     }
